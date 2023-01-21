@@ -1,7 +1,6 @@
 package com.bridgelabz.hashTable;
 
-
-public class MainMap {
+public class MapMain {
 
     public static void main(String[] args) {
         String sentence = "Paranoids are not paranoid because they are paranoid but because "
@@ -30,5 +29,11 @@ public class MainMap {
             int frequency = map.get(word);
             System.out.println("Frequency of " + word + " : " + frequency);
         }
+
+        System.out.println();
+        System.out.println("Deleting Avoidable : ");
+        map.remove("avoidable");
+        map.display();
     }
+
 }
